@@ -7,8 +7,16 @@
 
 namespace sa {
 
-void simulated_annealing(std::vector<Trio> cities);
+std::vector<Trio> swapRand(std::vector<Trio> cities);
 
-}
+double euclDist(Trio &first, Trio &second);
+
+double tspTotal(std::vector<Trio> &cities);
+
+double calcTi(std::vector<Trio> &s);
+
+std::vector<Trio> simulated_annealing(std::vector<Trio> &cities);
+
+}  // namespace sa
 
 #endif

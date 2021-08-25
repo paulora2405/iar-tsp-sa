@@ -7,13 +7,22 @@
 
 namespace sa {
 
+struct PontoH {
+  int i;
+  double cost;
+};
+
 std::vector<Trio> swapRand(std::vector<Trio> cities);
 
 double euclDist(Trio &first, Trio &second);
 
 double tspTotal(std::vector<Trio> &cities);
 
-double calcTi(std::vector<Trio> &s);
+double calcTi_0(int i, double T0, double TN, double N);
+
+double calcTi_2(int i, double T0, double TN, double N);
+
+double calcTi_3(int i, double T0, double TN, double N);
 
 std::vector<Trio> simulated_annealing(std::vector<Trio> &cities);
 

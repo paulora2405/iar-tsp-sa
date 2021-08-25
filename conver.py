@@ -21,6 +21,6 @@ plt.plot('temp', 'cost', data=df, color='blue')
 plt.xlabel('Iterações')
 plt.ylabel('Custo')
 plt.title(
-    'Cf = {}'.format(round(df['cost'].min(), 2)))
+    'Cf{} = {}'.format(sys.argv[1], round(df['cost'].min(), 2)))
 # plt.savefig('est{}-grafico{}'.format(sys.argv[2], sys.argv[1]))
-plt.savefig('est-grafico.png')
+plt.savefig(f'graphs/f{sys.argv[1]}_novo.png')

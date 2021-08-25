@@ -18,13 +18,9 @@ double euclDist(Trio &first, Trio &second);
 
 double tspTotal(std::vector<Trio> &cities);
 
-double calcTi_0(int i, double T0, double TN, double N);
+double calcTi(int formula, int i, double T0, double TN, double N);
 
-double calcTi_2(int i, double T0, double TN, double N);
-
-double calcTi_3(int i, double T0, double TN, double N);
-
-std::vector<Trio> simulated_annealing(std::vector<Trio> &cities);
+double simulated_annealing(std::vector<Trio> &cities, int formula, bool drawGraph);
 
 }  // namespace sa
 
